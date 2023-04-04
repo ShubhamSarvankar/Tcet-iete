@@ -13,14 +13,14 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Inter", sans-serif;
-  --font-secondary: "Cardo", sans-serif;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
 }
 
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
+  --color-primary: #0812cb;
   --color-secondary: #161718;
 }
 
@@ -47,6 +47,8 @@ a:hover {
   color: #32cf93;
   text-decoration: none;
 }
+
+
 
 h1,
 h2,
@@ -249,6 +251,16 @@ h6 {
   animation: preloaderfinish 300ms ease-in-out 500ms forwards;
 }
 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
 @keyframes lineincrease {
   0% {
     height: 0%;
@@ -294,16 +306,16 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 55px;
   margin-right: 8px;
 }
 
 .header .logo h1 {
   font-size: 32px;
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
   color: #fff;
-  font-family: var(--font-secondary);
+  font-family: Raleway, Roboto, sans-serif;
 }
 
 .header .logo i {
@@ -374,7 +386,7 @@ h6 {
     font-family: var(--font-primary);
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     white-space: nowrap;
@@ -383,7 +395,7 @@ h6 {
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -392,7 +404,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #0f00e8;
   }
 
   .navbar .dropdown ul {
@@ -422,7 +434,7 @@ h6 {
   }
 
   .navbar .dropdown ul a i {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .navbar .dropdown ul a:hover,
@@ -502,7 +514,7 @@ h6 {
     justify-content: space-between;
     padding: 10px 20px;
     font-family: var(--font-primary);
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
@@ -513,7 +525,7 @@ h6 {
 
   .navbar a i,
   .navbar a:focus i {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 0;
     margin-left: 5px;
   }
@@ -522,7 +534,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #0307e7;
   }
 
   .navbar .dropdown ul,
@@ -639,7 +651,7 @@ h6 {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  width: 250px;
   border-radius: 50%;
   border: 5px solid #474a4d;
   margin: 0 auto;
@@ -894,8 +906,8 @@ h6 {
 }
 
 .gallery-single .portfolio-description .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50px;
+  width: 250px;
+  border-radius: 210px;
   border: 6px solid #2e3133;
   float: left;
   margin: 0 10px 0 0;
